@@ -6,7 +6,7 @@ window.onload = function() {
 
 var getTxt = function (){
   $.ajax({
-    url:'numbers.json',
+    url:'https://raw.githubusercontent.com/apoorvmathur/phonenumberverify/master/numbers.json',
     success: function (data){
 		numbers = JSON.parse(data);
 		document.getElementById("submit").disabled = false
