@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Check Phone Number</a>
+</nav>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="container" style="display:block;">
+            <div class="form-group">
+                <label for="exampleInputEmail1">
+                    <h5>Enter phone number below: </h5></label>
+                <input type="phone" class="form-control" id="phone" placeholder="Phone Number">
+            </div>
+            <a href="javascript:check()">
+                <button class="btn btn-default" id="submit" disabled>Submit</button>
+            </a>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="alert alert-success" role="alert" style="display:none;" id="alert-allow">You can call this number.</div>
+        <div class="alert alert-warning" role="alert" style="display:none;" id="alert-deny">You can't call this number.</div>
+        <div class="alert alert-danger" role="alert" style="display:none;" id="alert-fail">Internal Error.</div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
