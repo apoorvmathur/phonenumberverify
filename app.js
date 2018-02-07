@@ -21,6 +21,7 @@ var check = function(){
 	document.getElementById('alert-allow').style.display = "none"
 	document.getElementById('alert-deny').style.display = "none"
 	document.getElementById('alert-fail').style.display = "none"
+	phone = $.sha1(phone)
 	if(numbers[phone] == null) {
         document.getElementById('alert-allow').style.display = "block"
     } else {
